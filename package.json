@@ -1,6 +1,6 @@
 {
 	"name": "create-jobar-app",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "A tool to quickly initialize a Jobar application with a ready-to-use configuration.",
 	"license": "MIT",
 	"author": "William Donnette",
