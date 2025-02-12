@@ -21,7 +21,7 @@ export const installProject = (projectName: string) => {
 		license: 'ISC',
 	};
 	fs.writeFileSync(path.join(projectPath, `package.json`), JSON.stringify(packageJson, null, 2) + os.EOL);
-	execCommand(`cd ${projectName} && npm i jobar express`);
+	execCommand(`cd ${projectName} && npm i jobar express dotenv`);
 	execCommand(
 		`cd ${projectName} && npm i -D @temporalio/testing @tsconfig/node16 @types/express @types/mocha mocha nodemon nyc ts-node typescript`
 	);

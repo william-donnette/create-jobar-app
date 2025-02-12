@@ -24,6 +24,12 @@ yarn create jobar-app my-app
 
 This will create a `my-app` folder containing a pre-configured Jobar application.
 
+Then you can already test it with **Docker**:
+
+```sh
+cd my-app && docker compose up -d
+```
+
 ---
 
 ## 🎯 Features
