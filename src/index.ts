@@ -115,6 +115,9 @@ const createApp = async (projectName: string, verbose = false, template = 'hello
 		}
 		execCommand(`cd ${projectName} && rm -r jobar-${version} jobar-${version}.zip package.json`);
 
+		if (verbose) {
+			console.log('🚀 Installing dependencies...');
+		}
 		installProject(projectName);
 
 		console.log(`🎉 Installed version of Jobar ${template}: ${version}`);
