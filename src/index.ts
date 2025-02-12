@@ -113,7 +113,7 @@ const createApp = async (projectName: string, verbose = false, template = 'hello
 		if (verbose) {
 			console.log('🗑️ Removing all unnecessary resources');
 		}
-		execCommand(`cd ${projectName} && rm -r jobar-${version} jobar-${version}.zip package.json package-lock.json`);
+		execCommand(`cd ${projectName} && rm -r jobar-${version} jobar-${version}.zip package.json`);
 
 		installProject(projectName);
 

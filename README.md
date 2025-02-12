@@ -1,86 +1,79 @@
 # create-jobar-app
 
-🚀 **create-jobar-app** est une librairie permettant d'initialiser rapidement une application [**Jobar**](https://github.com/william-donnette/jobar) avec les configurations et dépendances nécessaires.
+🚀 **create-jobar-app** is a library that allows you to quickly initialize a **Jobar** application with the necessary configurations and dependencies.
 
 ## 📦 Installation
 
-Pour utiliser `create-jobar-app`, exécute simplement la commande suivante :
+To use `create-jobar-app`, simply run the following command:
 
 ```sh
 npm create jobar-app@latest my-app
 ```
 
-ou avec **npx** :
+or with **npx**:
 
 ```sh
 npx create-jobar-app my-app
 ```
 
-ou avec **yarn** :
+or with **yarn**:
 
 ```sh
 yarn create jobar-app my-app
 ```
 
-Cela créera un dossier `my-app` contenant une application Jobar préconfigurée.
+This will create a `my-app` folder containing a pre-configured Jobar application.
 
 ---
 
-## 🎯 Fonctionnalités
+## 🎯 Features
 
--   📂 Génération automatique de la structure de fichiers.
--   📌 Installation des dépendances essentielles.
--   ⚙️ Configuration optimisée pour un démarrage rapide.
--   🔌 Prêt à être personnalisé et déployé.
+-   📂 Automatically generates the project structure.
+-   📌 Installs essential dependencies.
+-   ⚙️ Optimized configuration for a quick start.
+-   🔌 Ready to be customized and deployed.
 
 ---
 
-## 🚀 Utilisation
+## 🚀 Usage
 
-Une fois le projet créé, accédez au dossier et démarrez l'application :
+Once the project is created, navigate to the folder and start the application:
 
 ```sh
 cd my-app
-docker compose up -d
 npm install
 npm run dev
 ```
 
-Cela lancera le serveur de développement avec hot-reloading.
+This will start the development server with hot-reloading.
 
 ---
 
 ## 🛠️ Configuration
 
-Si besoin, tu peux personnaliser l'initialisation en passant des options :
+If needed, you can customize the initialization by passing options:
 
 ```sh
 npm create jobar-app@latest my-app -- --template=custom
 ```
 
-Retrouve tous les templates ici: [https://github.com/william-donnette/jobar/tree/main/examples](https://github.com/william-donnette/jobar/tree/main/examples)
+Find all the templates here: [https://github.com/william-donnette/jobar/tree/main/examples](https://github.com/william-donnette/jobar/tree/main/examples)
 
 ---
 
-## 📝 Contribuer
+## 📝 Contributing
 
-Les contributions sont les bienvenues !
+Contributions are welcome!
 
--   Fork le repo
--   Crée une branche feature : `git checkout -b feature-ma-feature`
--   Commit tes changements : `git commit -m 'Ajout de ma fonctionnalité'`
--   Push : `git push origin feature-ma-feature`
--   Ouvre une Pull Request 🚀
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus de détails.
+-   Fork the repository
+-   Create a feature branch: `git checkout -b feature-my-feature`
+-   Commit your changes: `git commit -m 'Add my feature'`
+-   Push to the branch: `git push origin feature-my-feature`
+-   Open a Pull Request 🚀
 
 ---
 
-💡 **Besoin d'aide ?** N'hésite pas à ouvrir une issue [ici](https://gitlab.com/william-donnette/create-jobar-app/-/issues/new) ! 😊
+💡 **Need help?** Feel free to open an issue [here](https://gitlab.com/william-donnette/create-jobar-app/-/issues/new)! 😊
 
 ---
 
