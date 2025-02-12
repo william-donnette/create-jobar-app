@@ -15,7 +15,7 @@ export const installProject = (projectName: string) => {
 			test: 'nyc mocha --exit --require ts-node/register --require source-map-support/register src/**/*.spec.ts',
 			dev: 'nodemon src/index.ts',
 			build: 'tsc --build',
-			start: 'node lib/index.js',
+			start: 'node lib/src/index.js',
 		},
 		author: '',
 		license: 'ISC',
