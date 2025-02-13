@@ -54,6 +54,11 @@ const main = async () => {
 		process.exit(1);
 	}
 
+	if (projectName.includes('/')) {
+		console.error('Please do not use "/" in your project name, this can lead to unexpected behavior.');
+		process.exit(1);
+	}
+
 	checkForLatestVersion()
 		.catch(() => {
 			try {
