@@ -16,6 +16,8 @@ export const installProject = (projectName: string) => {
 			dev: 'nodemon src/index.ts',
 			build: 'tsc --build',
 			start: 'node dist/src/index.js',
+			'open-report':
+				"node -e \"const os = require('os'); const path = 'coverage/lcov-report/index.html'; if (os.platform() === 'darwin') { require('child_process').execSync('open ' + path); } else if (os.platform() === 'win32') { require('child_process').execSync('start ' + path); } else { require('child_process').execSync('xdg-open ' + path); }\"",
 		},
 		author: '',
 		license: 'ISC',
