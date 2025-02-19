@@ -22,7 +22,7 @@ const main = async () => {
 		.arguments('<project-directory>')
 		.usage(`${chalk.green('<project-directory>')} [options]`)
 		.action((name) => {
-			projectName = name.replaceAll('/', '').trim();
+			projectName = name;
 		})
 		.option('--verbose', 'print additional logs')
 		.option('--template <template-name>', 'specify a template for the created project')
@@ -89,7 +89,7 @@ main().catch(() => {
 });
 
 const createApp = async (projectName: string, verbose = false, template = 'hello-world', useYarn = false) => {
-	const projectPath = process.cwd() + `/${projectName}`;
+	const projectPath = process.cwd() + `/${projectName.trim()}`;
 	try {
 		if (fileExist(projectPath)) {
 			console.error(`❌ An other folder with the name ${projectName} already exist in this folder.`);
