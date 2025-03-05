@@ -23,8 +23,8 @@ export const installProject = (projectName: string) => {
 		license: 'ISC',
 	};
 	fs.writeFileSync(path.join(projectPath, `package.json`), JSON.stringify(packageJson, null, 2) + os.EOL);
-	execCommand(`cd ${projectName} && npm i jobar express dotenv`);
+	execCommand(`cd ${projectName} && npm i dotenv express jobar`);
 	execCommand(
-		`cd ${projectName} && npm i -D @istanbuljs/nyc-config-typescript @temporalio/testing @tsconfig/node16 @types/express @types/mocha mocha nodemon nyc ts-node tsc-alias tsconfig-paths typescript`
+		`cd ${projectName} && npm i -D @istanbuljs/nyc-config-typescript @temporalio/nyc-test-coverage @temporalio/testing @tsconfig/node16 @types/express @types/mocha @types/sinon mocha nodemon nyc sinon ts-node tsc-alias tsconfig-paths typescript uuid`
 	);
 };
